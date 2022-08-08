@@ -3,8 +3,9 @@ import java.time.Instant;
 public class GCD {
 
     // recursiveGcd(8,12) == 4
+    // Euclid's method
     public int recursiveGcd(int a, int b) {
-        if (a == 0 || b == 0) return a + b; // base case
+        if (b == 0) return a; // base case
         return recursiveGcd(b, a % b); // recursive case
     }
 
